@@ -60,10 +60,9 @@ articles.forEach(article => {
     </style>
 </head>
 <body>
-    <a href="/" class="main-title">返回主页</a>
+    <a href="/" class="main-title">${article.title}</a>
     <div class="divider"></div>
     <div class="article-content-container">
-        <h1>${article.title}</h1> <!-- Added article title inside content -->
         ${article.content}
     </div>
 </body>
