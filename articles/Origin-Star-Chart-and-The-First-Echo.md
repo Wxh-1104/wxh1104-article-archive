@@ -1,5 +1,5 @@
 ---
-title: "我的第一篇文章"
+title: "原点，星图，The First Echo"
 date: "2025-06-01"
 summary: "“The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it.”"
 ---
