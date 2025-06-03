@@ -1,6 +1,6 @@
 ---
 title: "原点，星图，The First Echo"
-date: "2025-06-01"
+date: "2025-05-24"
 summary: "“The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it.”"
 ---
 
@@ -9,6 +9,7 @@ main( ) {
 printf("hello, world\n");
 }
 ```
+
 这应该是世界上最为人熟知的一段代码了。Hello World程序总是初学者学习某种编程语言所接触的第一个程序。它短小、直接，却蕴含着开启一个全新世界的力量——一个由逻辑、指令和数据构成的世界。当我们通过键盘敲下这行看似简单的字符，并通过编译器（或解释器）这扇“传送门”将其传递给机器时，屏幕上那句冰冷的“hello, world”回应，便是这个数字世界传来的“第一声回响”。它标志着我们与机器建立了一种新的沟通方式，一种基于精确指令和可预期结果的对话。这个程序最早面向大众，出现在那本被誉为C语言“圣经”的经典著作《The C Programming Language》之中，由丹尼斯·里奇 (Dennis Ritchie) 和布莱恩·柯林汉 (Brian Kernighan) 合著。这本薄薄的小册子，如同星图一般，为无数后来者指引了进入计算机编程世界的路径。
 
 但计算机科学 (Computer Science, 简称CS) 远不止于写出一个“hello, world”程序，甚至远不止于编程本身。当我们凝视这段代码，当我们思考它是如何在冰冷的硅片上运行并产生意义时，我们实际上已经开始触及计算机科学的核心了。
