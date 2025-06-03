@@ -54,11 +54,11 @@ articles.forEach((article) => {
     <style>
         /* 复制自你的 index.html 样式 - 你可以考虑提取到共享CSS文件 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: monospace; line-height: 1.5; padding: 1rem; background: #f5f5f5; font-size: 1.1rem; display: block;}
+        body { font-family: monospace; line-height: 2; padding: 1rem; background: #f5f5f5; font-size: 1.1rem; display: block;}
         .main-title { font-size: 2rem; text-align: center; color: #2c3e50; margin: 1rem 0; padding: 0 1rem; text-decoration: none; display: block; }
         .main-title:hover { text-decoration: underline; } /* Added hover effect for link */
         .divider { height: 3px; background: linear-gradient(90deg, #e7e7e7, #999, #e7e7e7); margin: 1rem auto; width: 90%; max-width: 1000px; }
-        .article-content-container { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .article-content-container { width: 85%; margin: 2rem auto; background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .article-content-container img { max-width: 100%; height: auto; border-radius: 8px; }
         /* Add other specific styles for article page if needed */
     </style>
