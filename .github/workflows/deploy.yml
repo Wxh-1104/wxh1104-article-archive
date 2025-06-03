@@ -1,0 +1,46 @@
+name: Build and Deploy Website
+
+on:
+  push:
+    branches:
+      - main # 或者你的主分支名，如 master
+    paths:
+      - 'articles/**.md'
+      - 'index.html'
+      - 'scripts/build.js'
+      - 'package.json'
+      - 'package-lock.json' # Important to include if you use npm ci
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push to gh-pages branch
+      pages: write    # Needed for GitHub Pages deployment actions (optional for peaceiris)
+      id-token: write # Needed for OIDC token (optional for peaceiris)
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Or your preferred LTS version
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci # Use ci for cleaner installs in CI
+
+      - name: Build website
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: article.wxh1104.online
+          # user_name: 'Your Name' # Optional: Committer name
+          # user_email: 'your-email@example.com' # Optional: Committer email
+          # commit_message: 'Deploy to GitHub Pages' # Optional: Custom commit message

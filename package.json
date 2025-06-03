@@ -1,0 +1,19 @@
+{
+  "name": "article-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "npx serve public"
+  },
+  "dependencies": {
+    "marked": "^5.0.0",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.1.1",
+    "dayjs": "^1.11.7",
+    "glob": "^10.2.2"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
