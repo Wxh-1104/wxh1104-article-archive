@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+            line-height: 1.5;
+            padding: 1rem;
+            background: #f5f5f5;
+        }
+
+        /* 大标题样式 */
+        .main-title {
+            font-size: 2rem;
+            text-align: center;
+            color: #2c3e50;
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+
+        /* 分隔线样式 */
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, #e7e7e7, #999, #e7e7e7);
+            margin: 1rem auto;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .card-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            align-items: flex-start;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .article-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e7e7e7;
+        }
+
+        .article-summary {
+            color: #666;
+            margin: 1rem 0;
+        }
+
+        .read-more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0.5rem 1.5rem;
+            background: rgba(25, 25, 25, 0.1);
+            color: grey;
+            border-radius: 12px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+
+        .read-more:hover {
+            background: grey;
+        }
+
+        .read-more:hover .button-text,
+        .read-more:hover .publish-date {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .button-text {
+            font-weight: 500;
+        }
+
+        .publish-date {
+            font-size: 0.7rem;
+            margin-left: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .article-card {
+                padding: 1rem;
+            }
+
+            .article-title {
+                font-size: 1.3rem;
+            }
+
+            .read-more {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+
+            .publish-date {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="main-title">Wxh1104文章存档</h1>
+    <div class="divider"></div>
+    <div class="card-container">
+
+  <div class="article-card">
+      <h2 class="article-title">我的第一篇文章</h2>
+      <div class="article-summary">
+          “The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it.”
+      </div>
+      <a href="/articles/Origin-Star-Chart-and-The-First-Echo.html" class="read-more">
+          <span class="button-text">> 阅读全文</span>
+          <span class="publish-date">2025/06/01</span>
+      </a>
+  </div>
+
+</div>
+            <a href="#" class="read-more">
+                <span class="button-text">> 点击这里回到页首</span>
+                <span class="publish-date">2025/06/03</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
